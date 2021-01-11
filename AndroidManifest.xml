@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.mini_projet_android">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="FDS"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".MAdapter"
+            tools:ignore="Instantiatable"></activity>
+        <activity android:name=".Mission_Fragment"
+            tools:ignore="Instantiatable" />
+        <activity android:name=".Cprofile" />
+
+        <activity
+            android:name=".PostAdapter"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".Activities.AboutFragment"
+            tools:ignore="Instantiatable" />
+
+        <activity
+            android:name=".HomeFragment"
+            tools:ignore="Instantiatable" />
+        <activity android:name=".Fprofile" />
+        <activity android:name=".Activities.AddClient" />
+        <activity android:name=".AddMission" />
+        <activity android:name=".AddFreelancer" />
+        <activity android:name=".AjouterPost" />
+        <activity android:name=".SignupActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+    </application>
+
+</manifest>
